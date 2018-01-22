@@ -38,12 +38,12 @@ Grid
 }
 
 .col-left {
-  width: 65.4%;
+  width: 65%;
   float: left;
 }
 
 .col-right {
-  width: 23.5%;
+  width: 235px;
   float: right;
 }
 
@@ -269,16 +269,6 @@ Responsive Design
 }
 
 @media (max-width: 768px) {
-  header li {
-    padding: 0 1rem;
-  }
-
-  h1 {
-    font-size: 58px;
-  }
-}
-
-@media (max-width: 600px) {
   .col-left {
     float: none;
     width: 100%;
@@ -289,9 +279,60 @@ Responsive Design
     width: 100%;
   }
 
+  .col-right nav {
+    float: left;
+    width: 50%;
+    padding-bottom: 0;
+  }
+
+  .col-right section {
+    float: right;
+    width: 50%;
+    padding-bottom: 0;
+  }
+
+  h1 {
+    font-size: 58px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  article {
+    padding-bottom: 50px;
+  }
+
+  .col-left nav {
+    padding-bottom: 50px;
+  }
+
+  aside {
+    overflow: hidden;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  header li {
+    padding: 0 1rem;
+  }
+
+  .post_comment {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 600px) {
   .col-left nav,
   .col-right nav {
     padding-bottom: 50px;
+    float: none;
+    width: 100%;
+  }
+
+  .col-right section {
+    float: none;
+    width: 100%;
   }
 
   .col-left nav {
@@ -356,9 +397,5 @@ Responsive Design
 
   .comments {
     padding-bottom: 0px;
-  }
-
-  .post_comment {
-    padding-bottom: 50px;
   }
 }
